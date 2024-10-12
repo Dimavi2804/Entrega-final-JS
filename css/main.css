@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    --clr-primary: #d5c9df;
+    --clr-black: black;
+    --clr-secondary: #eee5e9;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.header {
+    background-color: var(--clr-primary);
+    color: var(--clr-black);
+    padding-block: 1rem;
+}
+
+.main {
+    padding-block: 2rem;
+}
+
+.titulo {
+    margin-bottom: 1rem;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.producto {
+    background-color: var(--clr-primary);
+    padding: .5rem;
+    border-radius: 1rem;
+    color: var(--clr-black);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+.producto-img {
+    border-radius: .75rem;
+}
+
+.producto-boton {
+    border-radius: .75rem;
+    border: 0;
+    background-color: var(--clr-secondary);
+    color: var(--clr-black);
+    padding: .5rem;
+    margin-top: auto;
+    cursor: pointer;
+    border: 2px solid var(--clr-secondary);
+    transition: .2s;
+}
+
+.producto-boton:hover {
+    background-color: var(--clr-black);
+    color: var(--clr-primary);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.carrito-producto {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-primary);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: var(--clr-black);
+    margin-bottom: 1rem;
+}
+
+.carrito-producto h3, .carrito-producto p {
+    margin: 0;
+    flex: 1;
+}
+
+.carrito-producto-boton {
+    background-color: var(--clr-black);
+    border: 0;
+    padding: .25rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+.footer {
+    background-color: var(--clr-primary);
+    color: var(--clr-black);
+    padding-block: 2rem;
+}
