@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--clr-primary);
     color: var(--clr-black);
     padding-block: 1rem;
+    text-align: center;
 }
 
 .main {
@@ -119,5 +120,6 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     background-color: var(--clr-primary);
     color: var(--clr-black);
+    text-align: center;
     padding-block: 2rem;
 }
